@@ -9,8 +9,7 @@ import cors from 'cors';
 export const app = express();
 
 app.use(cors({
-    origin: 'https://servitechfront.vercel.app',
-    credentials: true,
+    origin: '*'
 }));
 
 app.use(morgan('dev'));
