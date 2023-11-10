@@ -9,7 +9,8 @@ import cors from 'cors';
 export const app = express();
 
 app.use(cors({
-    origin: '*'
+    origin: '*',
+    credentials: true
 }));
 
 app.use(morgan('dev'));
